@@ -26,6 +26,14 @@ export default function LandingPage() {
       completed: true,
       difficulty: "Beginner",
       topics: ["useState", "complex objects", "nested state"]
+    },
+    {
+      id: 4,
+      title: "World's Most Annoying Form",
+      description: "Master controlled forms with this hilariously evil form that fights back",
+      completed: true,
+      difficulty: "Beginner",
+      topics: ["controlled inputs", "forms", "onChange"]
     }
     // Future challenges will be added here
   ]

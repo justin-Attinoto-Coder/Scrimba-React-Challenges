@@ -77,6 +77,21 @@ Create an RPG character with equipment, stats, and attack options using a comple
 
 **Location:** `/challenges/03-rpg-character-creator/`
 
+### Challenge 04: World's Most Annoying Form ✅
+
+**Difficulty:** Beginner  
+**Topics:** controlled inputs, forms, onChange
+
+Build the world's most annoying form by making all inputs controlled—then watch it hilariously sabotage user inputs!
+
+**Key Learning Objectives:**
+- Understanding controlled vs uncontrolled inputs
+- Connecting form elements to state
+- Working with different input types (text, radio, checkbox, select)
+- Handling form events
+
+**Location:** `/challenges/04-annoying-form/`
+
 ## 🎨 Features
 
 - **Beautiful Landing Page:** Modern, responsive design with gradient animations
