@@ -1,5 +1,6 @@
 import React from "react"
 import { nanoid } from "nanoid"
+import reactLogo from "./images/react.svg"
 
 export default function App() {
   const [flashCard, setFlashCard] = React.useState({
@@ -22,7 +23,7 @@ export default function App() {
     <div className="page">
       <header className="hero">
         <div className="logo-circle">
-          <img src="./images/react.svg" alt="React logo" />
+          <img src={reactLogo} alt="React logo" />
         </div>
         <div>
           <p className="eyebrow">Challenge 02</p>
