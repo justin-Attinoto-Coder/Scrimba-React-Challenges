@@ -1,13 +1,16 @@
 body {
-    margin: 0;
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-    background-size: cover;
-    background-position: 50% 50%;
-    width: 100vw;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center
+        margin: 0;
+        background:
+            linear-gradient(160deg, rgba(25, 32, 72, 0.7), rgba(24, 87, 122, 0.5)),
+            url("https://images.unsplash.com/photo-1505740420928-5e560c06d30e?auto=format&fit=crop&w=1600&q=80");
+        background-size: cover;
+        background-position: 50% 50%;
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #e8f3ff;
 }
 
 div div {

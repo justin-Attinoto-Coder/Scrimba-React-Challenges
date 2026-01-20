@@ -10,6 +10,14 @@ export default function LandingPage() {
       completed: true,
       difficulty: "Beginner",
       topics: ["useState", "onClick", "conditional rendering"]
+    },
+    {
+      id: 2,
+      title: "React Study Buddy",
+      description: "Flip a flashcard between question and answer with smooth 3D motion",
+      completed: false,
+      difficulty: "Beginner",
+      topics: ["useState", "class toggling", "conditional classes"]
     }
     // Future challenges will be added here
   ]

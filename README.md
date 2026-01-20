@@ -48,6 +48,20 @@ Create a Play/Pause button with React state management and beautiful 3D styling 
 
 **Location:** `/challenges/01-video-game-button/`
 
+### Challenge 02: React Study Buddy
+
+**Difficulty:** Beginner  
+**Topics:** useState, class toggling, conditional classes
+
+Build a flip-card flashcard that toggles between a question side and an answer side with a smooth 3D rotation.
+
+**Key Learning Objectives:**
+- Toggling class names based on state
+- Driving CSS animations from React state
+- Mapping arrays to list items with keys
+
+**Location:** `/challenges/02-study-buddy/`
+
 ## 🎨 Features
 
 - **Beautiful Landing Page:** Modern, responsive design with gradient animations
@@ -103,4 +117,5 @@ ISC
 
 - Course by Daniel Beckrose via Scrimba
 - Button styles adapted from [UIverse](https://uiverse.io/Madflows/terrible-catfish-72)
+- Backgrounds via Unsplash: gaming photo by Lala Azizli; desk study photo by Kelly Sikkema
 
