@@ -15,9 +15,17 @@ export default function LandingPage() {
       id: 2,
       title: "React Study Buddy",
       description: "Flip a flashcard between question and answer with smooth 3D motion",
-      completed: false,
+      completed: true,
       difficulty: "Beginner",
       topics: ["useState", "class toggling", "conditional classes"]
+    },
+    {
+      id: 3,
+      title: "RPG Character Creator",
+      description: "Build a character with stats, equipment, and attacks using complex state",
+      completed: true,
+      difficulty: "Beginner",
+      topics: ["useState", "complex objects", "nested state"]
     }
     // Future challenges will be added here
   ]

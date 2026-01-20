@@ -48,7 +48,7 @@ Create a Play/Pause button with React state management and beautiful 3D styling 
 
 **Location:** `/challenges/01-video-game-button/`
 
-### Challenge 02: React Study Buddy
+### Challenge 02: React Study Buddy ✅
 
 **Difficulty:** Beginner  
 **Topics:** useState, class toggling, conditional classes
@@ -61,6 +61,21 @@ Build a flip-card flashcard that toggles between a question side and an answer s
 - Mapping arrays to list items with keys
 
 **Location:** `/challenges/02-study-buddy/`
+
+### Challenge 03: RPG Character Creator ✅
+
+**Difficulty:** Beginner  
+**Topics:** useState, complex objects, nested state
+
+Create an RPG character with equipment, stats, and attack options using a complex nested state object.
+
+**Key Learning Objectives:**
+- Managing complex state with nested objects
+- Working with arrays in state
+- Randomizing data and updating state
+- Component composition and prop passing
+
+**Location:** `/challenges/03-rpg-character-creator/`
 
 ## 🎨 Features
 
