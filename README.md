@@ -17,7 +17,7 @@ This repository contains a collection of React challenges designed to help you m
 
 ```bash
 # Clone the repository
-git clone https://github.com/justin-Attinoto-Coder/Scrimba-React-Challenges.git
+git clone https://github.com/YOUR-USERNAME/Scrimba-React-Challenges.git
 
 # Navigate to the project directory
 cd Scrimba-React-Challenges

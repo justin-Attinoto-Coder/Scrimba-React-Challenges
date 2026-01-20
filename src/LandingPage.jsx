@@ -60,12 +60,10 @@ export default function LandingPage() {
                 {challenge.difficulty}
               </span>
               <a 
-                href={challenge.path} 
+                href={`/challenge-${String(challenge.id).padStart(2, '0')}.html`}
                 className="view-challenge-btn"
-                onClick={(e) => {
-                  e.preventDefault()
-                  alert('To view this challenge, navigate to: ' + challenge.path + '\n\nIn development mode, you would set up routing to display each challenge.')
-                }}
+                target="_blank"
+                rel="noopener noreferrer"
               >
                 View Challenge →
               </a>
