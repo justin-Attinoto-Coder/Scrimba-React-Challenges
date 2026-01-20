@@ -9,8 +9,7 @@ export default function LandingPage() {
       description: "Create a Play/Pause button with React state and beautiful 3D styling",
       completed: true,
       difficulty: "Beginner",
-      topics: ["useState", "onClick", "conditional rendering"],
-      path: "/challenges/01-video-game-button"
+      topics: ["useState", "onClick", "conditional rendering"]
     }
     // Future challenges will be added here
   ]
