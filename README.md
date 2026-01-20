@@ -17,10 +17,10 @@ This repository contains a collection of React challenges designed to help you m
 
 ```bash
 # Clone the repository
-git clone https://github.com/YOUR-USERNAME/Scrimba-React-Challenges.git
+git clone https://github.com/YOUR-USERNAME/scrimba-react-challenges.git
 
 # Navigate to the project directory
-cd Scrimba-React-Challenges
+cd scrimba-react-challenges
 
 # Install dependencies
 npm install
@@ -58,7 +58,7 @@ Create a Play/Pause button with React state management and beautiful 3D styling 
 ## 📁 Project Structure
 
 ```
-Scrimba-React-Challenges/
+scrimba-react-challenges/
 ├── src/                          # Landing page source
 │   ├── main.jsx                  # Application entry point
 │   ├── LandingPage.jsx          # Main landing page component
