@@ -21,6 +21,14 @@ export default function LandingPage() {
     },
     {
       id: 3,
+      title: "World's Most Annoying Form",
+      description: "Master controlled forms with this hilariously evil form that fights back",
+      completed: true,
+      difficulty: "Beginner",
+      topics: ["controlled inputs", "forms", "onChange"]
+    },
+    {
+      id: 4,
       title: "RPG Character Creator",
       description: "Build a character with stats, equipment, and attacks using complex state",
       completed: true,
@@ -28,14 +36,45 @@ export default function LandingPage() {
       topics: ["useState", "complex objects", "nested state"]
     },
     {
-      id: 4,
-      title: "World's Most Annoying Form",
-      description: "Master controlled forms with this hilariously evil form that fights back",
+      id: 5,
+      title: "RPG Hero Name Input",
+      description: "Create a form where users can enter their RPG character's name, which gets transformed into a heroic title upon submission",
       completed: true,
       difficulty: "Beginner",
-      topics: ["controlled inputs", "forms", "onChange"]
+      topics: ["controlled inputs", "forms", "onSubmit", "state updates"]
+    },
+    {
+      id: 6,
+      title: "The Legend of Scrimba",
+      description: "The hero of this RPG needs a name! Set up a controlled input for the character's name, which gets transformed into a heroic title upon submission with smooth animations",
+      completed: true,
+      difficulty: "Beginner",
+      topics: ["controlled inputs", "forms", "onSubmit", "state updates", "useEffect"]
+    },
+    {
+      id: 7,
+      title: "Math-o-Matic Quiz Generator",
+      description: "Build an interactive math quiz generator that creates random arithmetic problems and provides feedback on user answers with smooth animations and auto-advancing to new problems",
+      completed: true,
+      difficulty: "Intermediate",
+      topics: ["useEffect", "conditional rendering", "state management", "timers"]
+    },
+    {
+      id: 8,
+      title: "Simple Food Restaurant",
+      description: "Convert a vanilla JavaScript webpage that manipulates the DOM into a modern React application using JSX components",
+      completed: true,
+      difficulty: "Beginner",
+      topics: ["JSX", "React components", "DOM conversion"]
+    },
+    {
+      id: 9,
+      title: "Haunted House Real Estate",
+      description: "Build a haunted house real estate listings page that displays property cards with images, prices, and spooky details using React components and props",
+      completed: true,
+      difficulty: "Beginner",
+      topics: ["JSX", "React components", "props", "mapping arrays"]
     }
-    // Future challenges will be added here
   ]
 
   return (
@@ -94,19 +133,6 @@ export default function LandingPage() {
           </div>
         ))}
 
-        {/* Placeholder cards for upcoming challenges */}
-        {[...Array(5)].map((_, idx) => (
-          <div key={`upcoming-${idx}`} className="challenge-card upcoming">
-            <div className="challenge-header">
-              <span className="challenge-number">#{challenges.length + idx + 1}</span>
-            </div>
-            <h3 className="challenge-title">Coming Soon</h3>
-            <p className="challenge-description">More exciting React challenges are on the way!</p>
-            <div className="challenge-footer">
-              <span className="difficulty-badge">TBA</span>
-            </div>
-          </div>
-        ))}
       </main>
 
       <footer className="footer">
