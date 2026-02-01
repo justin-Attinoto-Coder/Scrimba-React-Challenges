@@ -15,7 +15,7 @@ window.housesForSale = [
         heating: true,
         haunted: true,
     },{
-        id: nanoid(),
+        id: window.nanoid(),
         image: "./images/luis-muller-t1IcKA8HkUM-unsplash.jpg",
         price: "$152,000",
         location: "Stumpsville, Indiana",
@@ -30,7 +30,7 @@ window.housesForSale = [
         heating: true,
         haunted: true,
     },{
-        id: nanoid(),
+        id: window.nanoid(),
         image: "./images/amber-kipp-DJEkBfLp6bc-unsplash.jpg",
         price: "$233,000",
         location: "Backwater, Tennessee",
@@ -45,7 +45,7 @@ window.housesForSale = [
         heating: true,
         haunted: true,
     },{
-        id: nanoid(),
+        id: window.nanoid(),
         image: "./images/nathan-dumlao-Mw1JgIAuK6c-unsplash.jpg",
         price: "$176,500",
         location: "Sticksville, Vermont",
@@ -60,7 +60,7 @@ window.housesForSale = [
         heating: false,
         haunted: true,
     },{
-        id: nanoid(),
+        id: window.nanoid(),
         image: "./images/robbie-down-3IRIerl16nk-unsplash.jpg",
         price: "$142,000",
         location: "Hinterland, Virginia",
@@ -75,7 +75,7 @@ window.housesForSale = [
         heating: true,
         haunted: true,
     },{
-        id: nanoid(),
+        id: window.nanoid(),
         image: "./images/peter-herrmann-eZaEWy2rAIc-unsplash.jpg",
         price: "$380,120",
         location: "Backwoods, Oregon",

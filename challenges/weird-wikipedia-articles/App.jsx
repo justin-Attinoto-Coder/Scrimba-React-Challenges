@@ -1,6 +1,6 @@
 window.App = function App() {
-	const [numOfArticles, setNumOfArticles] = React.useState(4)
-	const [currentArticles, setCurrentArticles] = React.useState(window.getArticles(numOfArticles))
+	const [numberOfArticles, setNumberOfArticles] = React.useState(4)
+	const [currentArticles, setCurrentArticles] = React.useState(window.getArticles(numberOfArticles))
 	
 	const articles = currentArticles.map(article => {
 		return React.createElement('li', { key: article.id, className: "article" },
@@ -17,7 +17,7 @@ window.App = function App() {
 				...articles
 			),
 			React.createElement(window.Button, {
-				numOfArticles: numOfArticles,
+				numberOfArticles: numberOfArticles,
 				setCurrentArticles: setCurrentArticles
 			})
 		)
