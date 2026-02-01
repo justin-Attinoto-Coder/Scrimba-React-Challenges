@@ -41,7 +41,7 @@ export default function Word(props) {
                 {word}
             </div>
             <div className="pronounciation el-container">
-                <img src="../images/speech.svg" />
+                <img src="./images/speech.svg" />
                 {pronunciation}
             </div>
             <div className="definition el-container">

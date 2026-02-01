@@ -9,7 +9,8 @@ export default function LandingPage() {
       description: "Create a Play/Pause button with React state and beautiful 3D styling",
       completed: true,
       difficulty: "Beginner",
-      topics: ["useState", "onClick", "conditional rendering"]
+      topics: ["useState", "onClick", "conditional rendering"],
+      url: "video-game-button.html"
     },
     {
       id: 2,
@@ -17,7 +18,8 @@ export default function LandingPage() {
       description: "Flip a flashcard between question and answer with smooth 3D motion",
       completed: true,
       difficulty: "Beginner",
-      topics: ["useState", "class toggling", "conditional classes"]
+      topics: ["useState", "class toggling", "conditional classes"],
+      url: "study-buddy.html"
     },
     {
       id: 3,
@@ -25,7 +27,8 @@ export default function LandingPage() {
       description: "Master controlled forms with this hilariously evil form that fights back",
       completed: true,
       difficulty: "Beginner",
-      topics: ["controlled inputs", "forms", "onChange"]
+      topics: ["controlled inputs", "forms", "onChange"],
+      url: "annoying-form.html"
     },
     {
       id: 4,
@@ -33,7 +36,8 @@ export default function LandingPage() {
       description: "Build a character with stats, equipment, and attacks using complex state",
       completed: true,
       difficulty: "Beginner",
-      topics: ["useState", "complex objects", "nested state"]
+      topics: ["useState", "complex objects", "nested state"],
+      url: "rpg-character-creator.html"
     },
     {
       id: 5,
@@ -41,7 +45,8 @@ export default function LandingPage() {
       description: "Create a form where users can enter their RPG character's name, which gets transformed into a heroic title upon submission",
       completed: true,
       difficulty: "Beginner",
-      topics: ["controlled inputs", "forms", "onSubmit", "state updates"]
+      topics: ["controlled inputs", "forms", "onSubmit", "state updates"],
+      url: "rpg-name-input.html"
     },
     {
       id: 6,
@@ -49,7 +54,8 @@ export default function LandingPage() {
       description: "The hero of this RPG needs a name! Set up a controlled input for the character's name, which gets transformed into a heroic title upon submission with smooth animations",
       completed: true,
       difficulty: "Beginner",
-      topics: ["controlled inputs", "forms", "onSubmit", "state updates", "useEffect"]
+      topics: ["controlled inputs", "forms", "onSubmit", "state updates", "useEffect"],
+      url: "legend-of-scrimba.html"
     },
     {
       id: 7,
@@ -57,7 +63,8 @@ export default function LandingPage() {
       description: "Build an interactive math quiz generator that creates random arithmetic problems and provides feedback on user answers with smooth animations and auto-advancing to new problems",
       completed: true,
       difficulty: "Intermediate",
-      topics: ["useEffect", "conditional rendering", "state management", "timers"]
+      topics: ["useEffect", "conditional rendering", "state management", "timers"],
+      url: "math-o-matic.html"
     },
     {
       id: 8,
@@ -65,7 +72,8 @@ export default function LandingPage() {
       description: "Convert a vanilla JavaScript webpage that manipulates the DOM into a modern React application using JSX components",
       completed: true,
       difficulty: "Beginner",
-      topics: ["JSX", "React components", "DOM conversion"]
+      topics: ["JSX", "React components", "DOM conversion"],
+      url: "simple-food-restaurant.html"
     },
     {
       id: 9,
@@ -73,7 +81,8 @@ export default function LandingPage() {
       description: "Build a haunted house real estate listings page that displays property cards with images, prices, and spooky details using React components and props",
       completed: true,
       difficulty: "Beginner",
-      topics: ["JSX", "React components", "props", "mapping arrays"]
+      topics: ["JSX", "React components", "props", "mapping arrays"],
+      url: "haunted-house-real-estate.html"
     },
     {
       id: 10,
@@ -81,7 +90,8 @@ export default function LandingPage() {
       description: "Build a fully functional calculator with complex state management, handling various calculation scenarios and edge cases",
       completed: true,
       difficulty: "Intermediate",
-      topics: ["useState", "complex state", "event handling", "conditional logic"]
+      topics: ["useState", "complex state", "event handling", "conditional logic"],
+      url: "original-calculator.html"
     },
     {
       id: 11,
@@ -89,7 +99,8 @@ export default function LandingPage() {
       description: "Display the top 100 colors in front-end development with ranking and hex codes using React components and array mapping",
       completed: true,
       difficulty: "Beginner",
-      topics: ["JSX", "React components", "props", "mapping arrays"]
+      topics: ["JSX", "React components", "props", "mapping arrays"],
+      url: "top-100-colors.html"
     },
     {
       id: 12,
@@ -97,7 +108,8 @@ export default function LandingPage() {
       description: "Create animated enemy characters that walk back and forth in a castle setting using React state and game logic",
       completed: true,
       difficulty: "Intermediate",
-      topics: ["useState", "useEffect", "mapping arrays", "game logic"]
+      topics: ["useState", "useEffect", "mapping arrays", "game logic"],
+      url: "enemies-in-the-castle.html"
     },
     {
       id: 13,
@@ -105,7 +117,8 @@ export default function LandingPage() {
       description: "Build a vocabulary learning app with word navigation and detailed definitions using efficient prop passing",
       completed: true,
       difficulty: "Intermediate",
-      topics: ["useState", "props", "object destructuring", "component composition"]
+      topics: ["useState", "props", "object destructuring", "component composition"],
+      url: "word-power.html"
     },
     {
       id: 14,
@@ -113,7 +126,8 @@ export default function LandingPage() {
       description: "Build a secret code-protected bank account interface that grants access to a million dollars upon correct password entry",
       completed: true,
       difficulty: "Beginner",
-      topics: ["useState", "controlled inputs", "form submission", "conditional rendering"]
+      topics: ["useState", "controlled inputs", "form submission", "conditional rendering"],
+      url: "million-dollar-bank-account.html"
     },
     {
       id: 15,
@@ -121,7 +135,8 @@ export default function LandingPage() {
       description: "Build a customizable dashboard with draggable widgets that saves user configurations to localStorage for persistence across sessions",
       completed: true,
       difficulty: "Intermediate",
-      topics: ["localStorage", "lazy state initialization", "useEffect", "drag and drop"]
+      topics: ["localStorage", "lazy state initialization", "useEffect", "drag and drop"],
+      url: "save-the-dashboard.html"
     },
     {
       id: 16,
@@ -129,15 +144,44 @@ export default function LandingPage() {
       description: "Create a dynamic stock tracking component that displays real-time price changes with color-coded indicators and automatic updates",
       completed: true,
       difficulty: "Intermediate",
-      topics: ["useState", "useEffect", "dynamic calculations", "conditional styling"]
+      topics: ["useState", "useEffect", "dynamic calculations", "conditional styling"],
+      url: "stock.html"
     },
     {
       id: 17,
-      title: "Weird Wikipedia Articles",
-      description: "Build an app that displays random weird Wikipedia articles with smooth animations and interactive buttons",
+      title: "Grok-zilla-pedia",
+      description: "Build an app that displays random funny articles from Grok-zilla-pedia with state-of-the-art CSS styling and animations",
       completed: true,
       difficulty: "Beginner",
-      topics: ["useState", "array.map", "DRY principles", "random selection"]
+      topics: ["useState", "array.map", "DRY principles", "random selection"],
+      url: "weird-wikipedia-articles.html"
+    },
+    {
+      id: 18,
+      title: "Fire Starter",
+      description: "Create an interactive game where you pick up a torch and light wood on fire using mouse events",
+      completed: true,
+      difficulty: "Intermediate",
+      topics: ["useState", "useEffect", "mouse events", "conditional rendering"],
+      url: "fire-starter.html"
+    },
+    {
+      id: 19,
+      title: "Mood Tracker",
+      description: "Build a life tracker app with diary cards showing daily ratings, emotions, activities, and notes",
+      completed: true,
+      difficulty: "Beginner",
+      topics: ["useState", "array.map", "DRY principles", "random selection"],
+      url: "mood-tracker.html"
+    },
+    {
+      id: 20,
+      title: "AutoComplete Solution",
+      description: "Build an automated to-do list with focus effects and auto-complete functionality",
+      completed: true,
+      difficulty: "Intermediate",
+      topics: ["useState", "controlled inputs", "useEffect", "conditional rendering"],
+      url: "autocomplete-solution.html"
     }
   ]
 
@@ -186,7 +230,7 @@ export default function LandingPage() {
                 {challenge.difficulty}
               </span>
               <a 
-                href={`/challenge-${String(challenge.id).padStart(2, '0')}.html`}
+                href={challenge.url}
                 className="view-challenge-btn"
                 target="_blank"
                 rel="noopener noreferrer"

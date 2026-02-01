@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AutoComplete Solution</title>
+    <link rel="stylesheet" href="./challenges/autocomplete-solution/style.css">
+</head>
+<body>
+    <div id="root"></div>
+    <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <script>
+        window.generateId = () => Date.now().toString() + Math.random().toString(36).substr(2, 9);
+        window.savedData = [
+            {
+                text: "Buy bananas",
+                complete: false,
+                id: window.generateId()
+            },
+            {
+                text: "Walk dog",
+                complete: false,
+                id: window.generateId()
+            }
+        ]
+    </script>
+    <script src="./challenges/autocomplete-solution/App.jsx"></script>
+    <script type="text/babel" data-presets="react">
+        const root = ReactDOM.createRoot(document.getElementById('root'));
+        root.render(<window.App />);
+    </script>
+</body>
+</html>
