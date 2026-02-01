@@ -1,12 +1,12 @@
 import React from "react"
 
-export default function HouseCard({ houseData, index, total }) {
+export default function HouseCard({houseData, index, array}) {
     return (
         <div className="house-card">
-            <p>
-                Listing {index + 1} of {total}
-            </p>
-            <img src={houseData.image} alt="House" />
+				<p>
+					Listing {index + 1} of {array.length}
+				</p>
+				<img src={houseData.image} />
             <div>
                 <ul>
                     <li>

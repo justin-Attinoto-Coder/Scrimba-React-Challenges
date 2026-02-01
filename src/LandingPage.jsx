@@ -74,6 +74,70 @@ export default function LandingPage() {
       completed: true,
       difficulty: "Beginner",
       topics: ["JSX", "React components", "props", "mapping arrays"]
+    },
+    {
+      id: 10,
+      title: "Original Calculator",
+      description: "Build a fully functional calculator with complex state management, handling various calculation scenarios and edge cases",
+      completed: true,
+      difficulty: "Intermediate",
+      topics: ["useState", "complex state", "event handling", "conditional logic"]
+    },
+    {
+      id: 11,
+      title: "Top 100 Colors",
+      description: "Display the top 100 colors in front-end development with ranking and hex codes using React components and array mapping",
+      completed: true,
+      difficulty: "Beginner",
+      topics: ["JSX", "React components", "props", "mapping arrays"]
+    },
+    {
+      id: 12,
+      title: "Enemies in the Castle",
+      description: "Create animated enemy characters that walk back and forth in a castle setting using React state and game logic",
+      completed: true,
+      difficulty: "Intermediate",
+      topics: ["useState", "useEffect", "mapping arrays", "game logic"]
+    },
+    {
+      id: 13,
+      title: "Word Power",
+      description: "Build a vocabulary learning app with word navigation and detailed definitions using efficient prop passing",
+      completed: true,
+      difficulty: "Intermediate",
+      topics: ["useState", "props", "object destructuring", "component composition"]
+    },
+    {
+      id: 14,
+      title: "Million Dollar Bank Account",
+      description: "Build a secret code-protected bank account interface that grants access to a million dollars upon correct password entry",
+      completed: true,
+      difficulty: "Beginner",
+      topics: ["useState", "controlled inputs", "form submission", "conditional rendering"]
+    },
+    {
+      id: 15,
+      title: "Save the Dashboard",
+      description: "Build a customizable dashboard with draggable widgets that saves user configurations to localStorage for persistence across sessions",
+      completed: true,
+      difficulty: "Intermediate",
+      topics: ["localStorage", "lazy state initialization", "useEffect", "drag and drop"]
+    },
+    {
+      id: 16,
+      title: "Stock Tracker",
+      description: "Create a dynamic stock tracking component that displays real-time price changes with color-coded indicators and automatic updates",
+      completed: true,
+      difficulty: "Intermediate",
+      topics: ["useState", "useEffect", "dynamic calculations", "conditional styling"]
+    },
+    {
+      id: 17,
+      title: "Weird Wikipedia Articles",
+      description: "Build an app that displays random weird Wikipedia articles with smooth animations and interactive buttons",
+      completed: true,
+      difficulty: "Beginner",
+      topics: ["useState", "array.map", "DRY principles", "random selection"]
     }
   ]
 

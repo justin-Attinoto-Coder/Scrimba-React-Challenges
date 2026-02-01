@@ -16,6 +16,7 @@
     "nanoid": "^5.0.7",
     "react": "^19.2.3",
     "react-dom": "^19.2.3",
+    "react-draggable": "^4.5.0",
     "vite": "^7.3.1"
   }
 }
