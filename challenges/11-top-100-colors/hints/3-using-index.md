@@ -1,1 +1,0 @@
-Remember that many array methods, including the map method, have a second, optional parameter for the callback function that you pass into it: a parameter for the index number of the item in the array. You can use this number to obtain the number you need.

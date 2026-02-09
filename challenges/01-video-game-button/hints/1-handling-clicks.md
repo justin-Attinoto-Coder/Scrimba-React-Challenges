@@ -1,3 +1,0 @@
-# Hint 1: Handling Clicks
-
-The button needs an onClick event handler. You can read more about this in the React documentation over here: https://beta.reactjs.org/learn/responding-to-events

@@ -1,5 +1,0 @@
-# Hint 3: Changing the Text
-
-You can do this with a ternary operator inside the button (in the space between the opening and closing tags of the button). 
-
-Note that there are other ways of doing this too; you don't *have* to do it this way! (But it is probably the most concise way of doing it.)

@@ -182,6 +182,114 @@ export default function LandingPage() {
       difficulty: "Intermediate",
       topics: ["useState", "controlled inputs", "useEffect", "conditional rendering"],
       url: "autocomplete-solution.html"
+    },
+    {
+      id: 21,
+      title: "Anti-Motivational Quotes",
+      description: "Display random anti-motivational quotes with dynamic backgrounds and font sizing",
+      completed: true,
+      difficulty: "Intermediate",
+      topics: ["useState", "dynamic styling", "array manipulation", "conditional rendering"],
+      url: "anti-motivational-quotes.html"
+    },
+    {
+      id: 22,
+      title: "Frontend Cards",
+      description: "Create an interactive birthday card that opens with a swipe gesture",
+      completed: true,
+      difficulty: "Intermediate",
+      topics: ["useState", "mouse events", "conditional rendering", "CSS transforms"],
+      url: "frontend-cards.html"
+    },
+    {
+      id: 23,
+      title: "File Uploader",
+      description: "Build a file uploader that handles multiple file selection with type restrictions and displays file information",
+      completed: true,
+      difficulty: "Intermediate",
+      topics: ["useState", "file inputs", "event handling", "array manipulation"],
+      url: "file-uploader.html"
+    },
+    {
+      id: 24,
+      title: "Photo Editor",
+      description: "Create a comprehensive photo editor with adjustable brightness, contrast, saturation, hue rotation, blur, sepia, grayscale, invert, and opacity using range sliders and CSS filters",
+      completed: true,
+      difficulty: "Intermediate",
+      topics: ["useState", "CSS filters", "range inputs", "dynamic styling"],
+      url: "photo-editor.html"
+    },
+    {
+      id: 25,
+      title: "Spam Newsletter",
+      description: "Build a newsletter subscription form with duplicate email detection, dynamic messaging, and form validation using React state management",
+      completed: true,
+      difficulty: "Intermediate",
+      topics: ["useState", "form handling", "array methods", "conditional rendering"],
+      url: "spam-newsletter.html"
+    },
+    {
+      id: 26,
+      title: "Weather App",
+      description: "Create a dynamic weather app that cycles through different days with changing backgrounds, icons, and temperature data using state management",
+      completed: true,
+      difficulty: "Intermediate",
+      topics: ["useState", "array manipulation", "conditional rendering", "CSS backgrounds"],
+      url: "weather-app.html"
+    },
+    {
+      id: 27,
+      title: "Read Me Later",
+      description: "Build a read-it-later app to save and manage articles with favorite, archive, and trash functionality using complex state management",
+      completed: false,
+      difficulty: "Intermediate",
+      topics: ["useState", "array manipulation", "conditional rendering", "data management"],
+      url: "read-me-later.html"
+    },
+    {
+      id: 28,
+      title: "Finger Strength",
+      description: "Build an interactive finger strength training game with click counters, timers, and progress tracking",
+      completed: false,
+      difficulty: "Beginner",
+      topics: ["useState", "useEffect", "event handling", "timers"],
+      url: "finger-strength.html"
+    },
+    {
+      id: 29,
+      title: "Boredom Blaster 3000",
+      description: "Create an activity generator that provides random fun activities to combat boredom with filtering and favorites",
+      completed: false,
+      difficulty: "Intermediate",
+      topics: ["useState", "useEffect", "API calls", "conditional rendering"],
+      url: "boredom-blaster-3000.html"
+    },
+    {
+      id: 30,
+      title: "Sonnet Central",
+      description: "Build a sonnet generator that creates Shakespearean sonnets with customizable themes and poetic structure",
+      completed: false,
+      difficulty: "Advanced",
+      topics: ["useState", "complex state", "text generation", "poetry algorithms"],
+      url: "sonnet-central.html"
+    },
+    {
+      id: 31,
+      title: "Virtual Reality",
+      description: "Create an immersive virtual reality welcome experience with dynamic messages, mouse tracking, and vaporwave aesthetics",
+      completed: false,
+      difficulty: "Intermediate",
+      topics: ["useState", "useEffect", "mouse events", "dynamic styling"],
+      url: "virtual-reality.html"
+    },
+    {
+      id: 32,
+      title: "Emoji Personality Test",
+      description: "Build an emoji personality test that tracks liked and passed emojis to determine your personality type",
+      completed: false,
+      difficulty: "Beginner",
+      topics: ["useState", "array manipulation", "event handling", "conditional rendering"],
+      url: "emoji-personality-test.html"
     }
   ]
 
@@ -192,7 +300,7 @@ export default function LandingPage() {
           <span className="gradient-text">Scrimba React Challenges</span>
         </h1>
         <p className="hero-subtitle">
-          63 React challenges to master modern React development
+          31 React challenges to master modern React development
         </p>
         <div className="stats">
           <div className="stat-card">
