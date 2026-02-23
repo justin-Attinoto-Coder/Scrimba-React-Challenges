@@ -39,26 +39,18 @@ export default function App() {
 	
 	console.log(playerName)
 
-	return (
-		<form className="form" onSubmit={handleSubmit}>
-            <TopSection submitted={submitted} />
-            
-			{/*-----Your input below!----------*/}
-			
-			<input 
-				className="name-input"
-				type="text"
-				maxLength={16}
-				placeholder="Enter Your Character's Name"
-				required
-				disabled={submitted}
-				onChange={handleChange}
-				value={playerName}
-			/>
-			
-			{/*-----Your input above!----------*/}
-            
-            <BottomSection submitted={submitted} playerName={playerName} />
-		</form>
+	return React.createElement("form", { className: "form", onSubmit: handleSubmit },
+		React.createElement(TopSection, { submitted: submitted }),
+		React.createElement("input", {
+			className: "name-input",
+			type: "text",
+			maxLength: 16,
+			placeholder: "Enter Your Character's Name",
+			required: true,
+			disabled: submitted,
+			onChange: handleChange,
+			value: playerName
+		}),
+		React.createElement(BottomSection, { submitted: submitted, playerName: playerName })
 	)
 }

@@ -87,17 +87,10 @@ export default function App() {
         functionToUse = noCharacter.noFunction
     }    
 
-  return (
-    <div className="wrapper">
-    
-      <StatusBars characterData={dataToUse}  />
-      
-      <Character characterData={dataToUse} />
-      
-      <Options characterData={dataToUse}  />
-      
-      <Button setCharacterData={functionToUse}/> 
-    
-    </div>
+  return React.createElement("div", { className: "wrapper" },
+    React.createElement(StatusBars, { characterData: dataToUse }),
+    React.createElement(Character, { characterData: dataToUse }),
+    React.createElement(Options, { characterData: dataToUse }),
+    React.createElement(Button, { setCharacterData: functionToUse })
   )
 }

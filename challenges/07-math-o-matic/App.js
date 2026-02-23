@@ -203,36 +203,28 @@ export default function App() {
         Bonus: To make this challenge stand out, incorporate modern design elements with color gradients, smooth animations, and a unique visual flair that feels fresh and up-to-date, rather than just copying the provided styles.
 */
     
-    return (
-        <div className="wrapper">  
-     
-            { !gameStarted && <h1>Math-o-Matic</h1> }
-
-            <form onSubmit={handleSubmit}>
-            
-                <label>
-                    { gameStarted && <div className="problem-container">{mathProblem.string}</div>}
-                    <input 
-                        type="number" 
-                        name="value"
-                        placeholder="?"
-                        onChange={updateResponse}
-                        value={currentResponse}
-                        className={inputClass}
-                        autoComplete="off"
-                        required
-                    />
-                </label>
-                       
-                <div className={`message-container ${messageClass}`}>
-                    {answerStatus}
-                </div>
-                
-                <div className="button-container">
-                    {gameStarted ? gamePlayButtons : startButton }
-                </div>
-                
-            </form>
-        </div>
-  )
+    return React.createElement("div", { className: "wrapper" },
+        !gameStarted && React.createElement("h1", null, "Math-o-Matic"),
+        React.createElement("form", { onSubmit: handleSubmit },
+            React.createElement("label", null,
+                gameStarted && React.createElement("div", { className: "problem-container" }, mathProblem.string),
+                React.createElement("input", {
+                    type: "number",
+                    name: "value",
+                    placeholder: "?",
+                    onChange: updateResponse,
+                    value: currentResponse,
+                    className: inputClass,
+                    autoComplete: "off",
+                    required: true
+                })
+            ),
+            React.createElement("div", { className: `message-container ${messageClass}` },
+                answerStatus
+            ),
+            React.createElement("div", { className: "button-container" },
+                gameStarted ? gamePlayButtons : startButton
+            )
+        )
+    )
 }

@@ -278,10 +278,8 @@ export default function App() {
     const buttonData = {operation: currentCalc.operation, clearOption: getClearOption()}
   
 
-    return (
-      <div className="calculator-container">
-        <Display currentCalc={currentCalc} />
-        <Buttons handleClick={handleClick} buttonData={buttonData}  />
-      </div>
+    return React.createElement("div", { className: "calculator-container" },
+        React.createElement(Display, { currentCalc: currentCalc }),
+        React.createElement(Buttons, { handleClick: handleClick, buttonData: buttonData })
     )
 }
