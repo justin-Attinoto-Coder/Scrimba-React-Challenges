@@ -33,7 +33,7 @@ export default function App() {
         4. If you complete these tasks correctly, the button should have some nice visual effects 
            when you click it, and the workshop background should be automatically replaced by a light blue background.
 */
-    return React.createElement("div", { className: gameRunning ? "playing" : "" }assName: gameRunning ? "playing" : "" }, 
+    return React.createElement("div", { className: gameRunning ? "playing" : "" }, 
         React.createElement("button", {
             className: "video-game-button", 
             onClick: () => setGameRunning(!gameRunning)
