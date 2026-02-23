@@ -290,6 +290,15 @@ export default function LandingPage() {
       difficulty: "Beginner",
       topics: ["useState", "array manipulation", "event handling", "conditional rendering"],
       url: "emoji-personality-test.html"
+    },
+    {
+      id: 33,
+      title: "ScrimbaFest",
+      description: "Build a festival event page with multiple days, posters, and ticket purchasing functionality",
+      completed: true,
+      difficulty: "Intermediate",
+      topics: ["useState", "props", "mapping arrays", "component composition"],
+      url: "scrimba-fest.html"
     }
   ]
 

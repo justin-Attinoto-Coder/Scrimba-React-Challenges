@@ -4,6 +4,14 @@ export default function App() {
   
   const [gameRunning, setGameRunning] = React.useState(false)
   
+  React.useEffect(() => {
+    if (gameRunning) {
+      document.body.classList.add("playing")
+    } else {
+      document.body.classList.remove("playing")
+    }
+  }, [gameRunning])
+  
 /* Challenge
   
     You're creating a button that will allow the user to play and pause a video game. Your task is to set it up and insert it in the div below (line 29) as follows: 
@@ -25,14 +33,10 @@ export default function App() {
         4. If you complete these tasks correctly, the button should have some nice visual effects 
            when you click it, and the workshop background should be automatically replaced by a light blue background.
 */
-    return (
-        <div>       
-            <button 
-                className="video-game-button" 
-                onClick={() => setGameRunning(!gameRunning)}
-            >
-                {gameRunning ? "Pause" : "Play"}
-            </button>
-        </div>
-  )
+    return React.createElement("div", { className: gameRunning ? "playing" : "" }assName: gameRunning ? "playing" : "" }, 
+        React.createElement("button", {
+            className: "video-game-button", 
+            onClick: () => setGameRunning(!gameRunning)
+        }, gameRunning ? "Pause" : "Play")
+    )
 }
