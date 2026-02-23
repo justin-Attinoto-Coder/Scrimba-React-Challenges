@@ -1,13 +1,53 @@
-import React from "react"
-import noCharacter from "./utilities/noCharacter"
-import Character from "./components/Character"
-import StatusBars from "./components/StatusBars"
-import Options from "./components/Options"
-import Button from "./components/Button"
-import attackOptionsList from "./data/attackOptionsList"
-import namesList from "./data/namesList"
+import Character from "./components/Character.js"
+import StatusBars from "./components/StatusBars.js"
+import Options from "./components/Options.js"
+import Button from "./components/Button.js"
 
-export default function App() {
+const noCharacter = {
+    noData: {
+        hat: false,
+        shield: false,
+        weapon: "sword",
+        name: "Unknown",
+        attackOptions: ["None", "None", "None", "None", "None", "None"],
+        stats: {
+            hp: 0,
+            mp: 0,
+            strength: 0
+        }
+    },
+    noFunction: () => console.log("Character state not initialized")
+}
+
+const namesList = [
+    "Aldric",
+    "Brynn",
+    "Celestia",
+    "Drakon",
+    "Elara",
+    "Finnian",
+    "Gwendolyn",
+    "Hadrian",
+    "Isolde",
+    "Jareth"
+]
+
+const attackOptionsList = [
+    "Fire Blast",
+    "Ice Shard",
+    "Thunder Strike",
+    "Poison Cloud",
+    "Healing Light",
+    "Shadow Strike",
+    "Wind Slash",
+    "Earth Quake",
+    "Holy Smite",
+    "Dark Curse",
+    "Lightning Bolt",
+    "Water Wave"
+]
+
+function App() {
     
 /* Challenge
 
@@ -94,3 +134,7 @@ export default function App() {
     React.createElement(Button, { setCharacterData: functionToUse })
   )
 }
+
+export default App
+
+ReactDOM.createRoot(document.getElementById('root')).render(React.createElement(App));

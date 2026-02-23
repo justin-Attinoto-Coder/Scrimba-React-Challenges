@@ -1,8 +1,32 @@
-import React from "react"
-import namesList from "../data/namesList"
-import attackOptionsList from "../data/attackOptionsList"
+const namesList = [
+    "Aldric",
+    "Brynn",
+    "Celestia",
+    "Drakon",
+    "Elara",
+    "Finnian",
+    "Gwendolyn",
+    "Hadrian",
+    "Isolde",
+    "Jareth"
+]
 
-export default function Button({ setCharacterData }) {
+const attackOptionsList = [
+    "Fire Blast",
+    "Ice Shard",
+    "Thunder Strike",
+    "Poison Cloud",
+    "Healing Light",
+    "Shadow Strike",
+    "Wind Slash",
+    "Earth Quake",
+    "Holy Smite",
+    "Dark Curse",
+    "Lightning Bolt",
+    "Water Wave"
+]
+
+function Button({ setCharacterData }) {
     
     function randomizeCharacter() {
         const randomName = namesList[Math.floor(Math.random() * namesList.length)]
@@ -23,9 +47,9 @@ export default function Button({ setCharacterData }) {
         })
     }
     
-    return (
-        <button className="randomize-btn" onClick={randomizeCharacter}>
-            🎲 Randomize Character
-        </button>
+    return React.createElement("button", { className: "randomize-btn", onClick: randomizeCharacter },
+        "🎲 Randomize Character"
     )
 }
+
+export default Button
