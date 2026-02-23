@@ -1,7 +1,4 @@
-import React from "react"
-import { nanoid } from "nanoid"
-
-export default function App() {
+function App() {
 
 	function handleChange(event) {
 		const { name, type, value, checked } = event.target
@@ -181,3 +178,5 @@ export default function App() {
 		}, "Submit")
 	)
 }
+
+ReactDOM.createRoot(document.getElementById('root')).render(React.createElement(App));
