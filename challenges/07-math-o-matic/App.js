@@ -1,10 +1,8 @@
-import React from "react"
-import { nanoid } from "nanoid"
-import CheckAnswerButton from "./components/CheckAnswerButton"
-import GetNewProblemButton from "./components/GetNewProblemButton"
-import StartButton from "./components/StartButton"
+import CheckAnswerButton from "./components/CheckAnswerButton.js"
+import GetNewProblemButton from "./components/GetNewProblemButton.js"
+import StartButton from "./components/StartButton.js"
 
-export default function App() {
+function App() {
     
     const [mathProblem, setMathProblem] = React.useState(getRandomProblem)
     const [currentResponse, setCurrentResponse] = React.useState("")
@@ -123,17 +121,14 @@ export default function App() {
         .slice(0, -1)
 
     const gamePlayButtons = [
-        <GetNewProblemButton
-            disabled={recentCorrectAnswer}
-            clickHandler={getNewProblem}
-            key={nanoid()}
-        />,
-        <CheckAnswerButton disabled={recentCorrectAnswer} key={nanoid()} />,
+        React.createElement(GetNewProblemButton, {
+            disabled: recentCorrectAnswer,
+            clickHandler: getNewProblem
+        }),
+        React.createElement(CheckAnswerButton, { disabled: recentCorrectAnswer })
     ]
 
-    const startButton = (
-        <StartButton clickHandler={() => setGameStarted(true)} />
-    )
+    const startButton = React.createElement(StartButton, { clickHandler: () => setGameStarted(true) })
     
     function showStates() {
         
@@ -228,3 +223,7 @@ export default function App() {
         )
     )
 }
+
+export default App
+
+ReactDOM.createRoot(document.getElementById('root')).render(React.createElement(App))

@@ -1,10 +1,9 @@
-import React from "react"
-import Buttons from "./components/Buttons"
-import Display from "./components/Display"
+import Buttons from "./components/Buttons.js"
+import Display from "./components/Display.js"
 import calculateResult from "./utilities/calculateResult"
 import getNum from "./utilities/getNum"
 
-export default function App() {
+function App() {
     
     const INITIAL_STATE = {
         currentNum: [],
@@ -283,3 +282,7 @@ export default function App() {
         React.createElement(Buttons, { handleClick: handleClick, buttonData: buttonData })
     )
 }
+
+export default App
+
+ReactDOM.createRoot(document.getElementById('root')).render(React.createElement(App))

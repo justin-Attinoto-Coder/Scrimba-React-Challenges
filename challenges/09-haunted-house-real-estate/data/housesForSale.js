@@ -1,7 +1,7 @@
 window.housesForSale = [
     {
-        id: window.nanoid(),
-        image: "./images/eleanor-brooke-62ZrBo3PoKc-unsplash.jpg",
+        id: "house1",
+        image: "challenges/09-haunted-house-real-estate/images/eleanor-brooke-62ZrBo3PoKc-unsplash.jpg",
         price: "$1,342,000",
         location: "Podunk, Ohio",
         squareFeet: "3,752",
@@ -15,8 +15,8 @@ window.housesForSale = [
         heating: true,
         haunted: true,
     },{
-        id: window.nanoid(),
-        image: "./images/luis-muller-t1IcKA8HkUM-unsplash.jpg",
+        id: "house2",
+        image: "challenges/09-haunted-house-real-estate/images/luis-muller-t1IcKA8HkUM-unsplash.jpg",
         price: "$152,000",
         location: "Stumpsville, Indiana",
         squareFeet: "1,252",
@@ -30,8 +30,8 @@ window.housesForSale = [
         heating: true,
         haunted: true,
     },{
-        id: window.nanoid(),
-        image: "./images/amber-kipp-DJEkBfLp6bc-unsplash.jpg",
+        id: "house3",
+        image: "challenges/09-haunted-house-real-estate/images/amber-kipp-DJEkBfLp6bc-unsplash.jpg",
         price: "$233,000",
         location: "Backwater, Tennessee",
         squareFeet: "1,995",
@@ -45,8 +45,8 @@ window.housesForSale = [
         heating: true,
         haunted: true,
     },{
-        id: window.nanoid(),
-        image: "./images/nathan-dumlao-Mw1JgIAuK6c-unsplash.jpg",
+        id: "house4",
+        image: "challenges/09-haunted-house-real-estate/images/nathan-dumlao-Mw1JgIAuK6c-unsplash.jpg",
         price: "$176,500",
         location: "Sticksville, Vermont",
         squareFeet: "956",
@@ -60,8 +60,8 @@ window.housesForSale = [
         heating: false,
         haunted: true,
     },{
-        id: window.nanoid(),
-        image: "./images/robbie-down-3IRIerl16nk-unsplash.jpg",
+        id: "house5",
+        image: "challenges/09-haunted-house-real-estate/images/robbie-down-3IRIerl16nk-unsplash.jpg",
         price: "$142,000",
         location: "Hinterland, Virginia",
         squareFeet: "1,212",
@@ -75,8 +75,8 @@ window.housesForSale = [
         heating: true,
         haunted: true,
     },{
-        id: window.nanoid(),
-        image: "./images/peter-herrmann-eZaEWy2rAIc-unsplash.jpg",
+        id: "house6",
+        image: "challenges/09-haunted-house-real-estate/images/peter-herrmann-eZaEWy2rAIc-unsplash.jpg",
         price: "$380,120",
         location: "Backwoods, Oregon",
         squareFeet: "2,612",

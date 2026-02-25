@@ -18,7 +18,8 @@ function App() {
 	console.log(playerName)
 
 	return React.createElement("form", { className: "form", onSubmit: handleSubmit },
-		React.createElement(TopSection, { submitted: submitted }),
+        React.createElement(TopSection, { submitted: submitted }),
+        
 		React.createElement("input", {
 			className: "name-input",
 			type: "text",
@@ -29,7 +30,8 @@ function App() {
 			onChange: handleChange,
 			value: playerName
 		}),
-		React.createElement(BottomSection, { submitted: submitted, playerName: playerName })
+        
+        React.createElement(BottomSection, { submitted: submitted, playerName: playerName })
 	)
 }
 
