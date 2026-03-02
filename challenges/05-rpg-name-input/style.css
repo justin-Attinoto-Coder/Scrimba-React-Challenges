@@ -1,10 +1,19 @@
-.form {
+body {
+    margin: 0;
+    background:
+        linear-gradient(160deg, rgba(25, 32, 72, 0.7), rgba(24, 87, 122, 0.5)),
+        linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)),
+        url("https://picsum.photos/1920/1080?random=1");
+    background-size: cover;
+    background-position: 50% 50%;
+    width: 100vw;
+    height: 100vh;
     display: flex;
-    flex-direction: column;
+    justify-content: center;
     align-items: center;
-    gap: 20px;
-    padding: 20px;
 }
+
+.form {
 
 .name-input {
     padding: 10px;

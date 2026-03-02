@@ -11,7 +11,7 @@ window.App = function App() {
 
     return React.createElement('div', { className: "wrapper" },
         React.createElement('header', null,
-            React.createElement('img', { className: "logo", src: "images/logo.png", alt: "Logo" })
+            React.createElement('img', { className: "logo", src: "challenges/09-haunted-house-real-estate/images/logo.png", alt: "Logo" })
         ),
         React.createElement('div', { className: "house-cards-container" },
             ...houseCards

@@ -1,76 +1,119 @@
 * {
-    box-sizing: border-box
+    box-sizing: border-box;
+    font-family: 'Creepster', cursive;
 }
 
-
-body { 
+body {
     margin: 0;
+    background: linear-gradient(135deg, #0d0d0d 0%, #1a1a1a 50%, #2a2a2a 100%);
+    background-attachment: fixed;
+    color: #e0e0e0;
+    min-height: 100vh;
 }
 
 header {
     width: 100vw;
     display: flex;
     justify-content: center;
-    padding: 15px;
-    background: #495057;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.8);
     position: fixed;
-    box-shadow: 2px 1px 4px 1px #212529;
+    top: 0;
+    z-index: 10;
+    box-shadow: 0 4px 20px rgba(255, 0, 0, 0.3);
+    border-bottom: 2px solid #ff0000;
 }
 
 .logo {
-    height: 100px;
-    border: 1px solid #212529;
-    box-shadow: 1px 1px 4px 1px #212529;
-    border-radius: 15px;
-    background: #dee2e6;
-    padding: 0 60px;
+    height: 120px;
+    border: 3px solid #ff0000;
+    box-shadow: 0 0 20px rgba(255, 0, 0, 0.5), inset 0 0 20px rgba(0, 0, 0, 0.5);
+    border-radius: 20px;
+    background: linear-gradient(45deg, #e0e0e0, #f0f0f0);
+    padding: 10px 80px;
+    transition: all 0.3s ease;
+}
+
+.logo:hover {
+    box-shadow: 0 0 30px rgba(255, 0, 0, 0.8), inset 0 0 30px rgba(0, 0, 0, 0.8);
+    transform: scale(1.05);
 }
 
 .wrapper {
-    background: hsla(210, 14%, 83%, 1);
-    background: linear-gradient(270deg, hsla(210, 14%, 83%, 1) 0%, hsla(208, 7%, 46%, 1) 100%);
-    background: -moz-linear-gradient(270deg, hsla(210, 14%, 83%, 1) 0%, hsla(208, 7%, 46%, 1) 100%);
-    background: -webkit-linear-gradient(270deg, hsla(210, 14%, 83%, 1) 0%, hsla(208, 7%, 46%, 1) 100%);
-    background-attachment: fixed;
+    background: transparent;
+    padding-top: 180px;
 }
 
 .house-cards-container {
-    padding-top: 150px;
     display: flex;
     justify-content: center;
     width: 100vw;
     flex-wrap: wrap;
-    gap: 30px;
-    padding-bottom: 30px;
+    gap: 40px;
+    padding-bottom: 50px;
 }
 
 .house-card {
-    width: 400px;
-    height: 760px;
-    border-radius: 15px;
-    background: #f8f9fa;
+    width: 420px;
+    height: 800px;
+    border-radius: 25px;
+    background: linear-gradient(145deg, #2a2a2a, #1a1a1a);
     display: flex;
     flex-direction: column;
     padding: 30px;
-    border: 2px solid #212529;
-    box-shadow: 2px 2px 4px 1px #212529;
+    border: 3px solid #ff0000;
+    box-shadow: 0 10px 30px rgba(255, 0, 0, 0.3), inset 0 0 20px rgba(0, 0, 0, 0.5);
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.house-card::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: conic-gradient(from 0deg, transparent, rgba(255, 0, 0, 0.1), transparent);
+    animation: rotate 4s linear infinite;
+    pointer-events: none;
+}
+
+@keyframes rotate {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+.house-card:hover {
+    transform: translateY(-10px) rotate(1deg);
+    box-shadow: 0 20px 40px rgba(255, 0, 0, 0.5), inset 0 0 30px rgba(0, 0, 0, 0.7);
 }
 
 .house-card p {
-    margin: -10px 0 10px 0;
+    margin: -10px 0 20px 0;
     text-align: center;
     font-weight: 600;
-    font-size: 16px;
+    font-size: 18px;
+    color: #ff0000;
+    text-shadow: 0 0 10px rgba(255, 0, 0, 0.5);
 }
 
 .house-card img {
-    width: 340px;
-    height: 340px;
+    width: 360px;
+    height: 360px;
     object-fit: cover;
-    border-radius: 15px;
+    border-radius: 20px;
     align-self: center;
     margin-bottom: 20px;
-    border: 2px solid #212529;
+    border: 3px solid #ff0000;
+    box-shadow: 0 0 20px rgba(255, 0, 0, 0.3);
+    transition: all 0.3s ease;
+}
+
+.house-card img:hover {
+    box-shadow: 0 0 30px rgba(255, 0, 0, 0.6);
+    transform: scale(1.05);
 }
 
 .house-card ul {
@@ -78,9 +121,10 @@ header {
     width: 100%;
     flex-wrap: wrap;
     justify-content: space-between;
-    height: 250px;
-    gap: 20px 60px;
+    height: 280px;
+    gap: 15px 40px;
     font-size: 16px;
+    color: #e0e0e0;
 }
 
 ul {
@@ -90,6 +134,17 @@ ul {
 
 li {
     list-style: none;
+    background: rgba(255, 255, 255, 0.05);
+    padding: 8px 12px;
+    border-radius: 10px;
+    border: 1px solid rgba(255, 0, 0, 0.3);
+    transition: all 0.3s ease;
+}
+
+li:hover {
+    background: rgba(255, 0, 0, 0.1);
+    border-color: #ff0000;
+    box-shadow: 0 0 10px rgba(255, 0, 0, 0.3);
 }
 
 li:nth-of-type(even) {
@@ -98,5 +153,7 @@ li:nth-of-type(even) {
 
 span {
     font-weight: 700;
+    color: #ff6666;
+}
     display: block;
 }

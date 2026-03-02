@@ -1,6 +1,8 @@
 function App() {
     const [activeSection, setActiveSection] = React.useState('home')
     const [selectedFood, setSelectedFood] = React.useState(null)
+    const [cart, setCart] = React.useState([])
+    const [animatingItem, setAnimatingItem] = React.useState(null)
 
     const menuItems = [
         {
@@ -40,8 +42,67 @@ function App() {
         }
     ]
 
+    const addToCart = (item) => {
+        setCart(prev => [...prev, item])
+        setAnimatingItem(item.id)
+        setTimeout(() => setAnimatingItem(null), 1000)
+        // Trigger confetti or something fun
+        triggerConfetti()
+    }
+
+    const placeOrder = () => {
+        // Extravagant celebration
+        triggerMegaCelebration()
+        // Clear cart after a delay
+        setTimeout(() => {
+            setCart([])
+            setActiveSection('home')
+        }, 3000)
+    }
+
+    const triggerMegaCelebration = () => {
+        // Confetti storm
+        for (let i = 0; i < 50; i++) {
+            setTimeout(() => {
+                const confetti = document.createElement('div')
+                confetti.className = 'confetti'
+                confetti.style.left = Math.random() * 100 + 'vw'
+                confetti.style.background = `hsl(${Math.random() * 360}, 100%, 50%)`
+                confetti.style.animationDuration = (Math.random() * 2 + 1) + 's'
+                document.body.appendChild(confetti)
+                setTimeout(() => document.body.removeChild(confetti), 3000)
+            }, i * 20)
+        }
+
+        // Rockets
+        for (let i = 0; i < 5; i++) {
+            setTimeout(() => {
+                const rocket = document.createElement('div')
+                rocket.className = 'rocket'
+                rocket.style.left = (20 + Math.random() * 60) + 'vw'
+                document.body.appendChild(rocket)
+                setTimeout(() => document.body.removeChild(rocket), 2000)
+            }, i * 400)
+        }
+
+        // Fireworks
+        for (let i = 0; i < 3; i++) {
+            setTimeout(() => {
+                const firework = document.createElement('div')
+                firework.className = 'firework'
+                firework.style.left = (30 + Math.random() * 40) + 'vw'
+                firework.style.top = (20 + Math.random() * 30) + 'vh'
+                document.body.appendChild(firework)
+                setTimeout(() => document.body.removeChild(firework), 1500)
+            }, i * 600)
+        }
+    }
+
     const handleFoodClick = (foodId) => {
-        setSelectedFood(selectedFood === foodId ? null : foodId)
+        const item = menuItems.find(item => item.id === foodId)
+        if (item) {
+            addToCart(item)
+        }
         // Add a fun animation effect
         const element = document.querySelector(`[data-food="${foodId}"]`)
         if (element) {
@@ -57,7 +118,7 @@ function App() {
         React.createElement("div", { className: "menu-grid" },
             menuItems.map(item => React.createElement("div", {
                 key: item.id,
-                className: `menu-item ${selectedFood === item.id ? 'selected' : ''}`,
+                className: `menu-item ${animatingItem === item.id ? 'animating' : ''}`,
                 "data-food": item.id,
                 onClick: () => handleFoodClick(item.id)
             },
@@ -69,7 +130,7 @@ function App() {
                     React.createElement("p", { className: "price" }, item.price),
                     React.createElement("p", { className: "description" }, item.description)
                 ),
-                selectedFood === item.id && React.createElement("div", { className: "selected-indicator" }, "✓ Added to order!")
+                animatingItem === item.id && React.createElement("div", { className: "added-to-cart" }, "🍽️ Added to Cart!")
             ))
         )
     )
@@ -124,19 +185,25 @@ function App() {
 
     return React.createElement("div", null,
         React.createElement("header", null,
-            React.createElement("div", { className: "button-container" },
-                React.createElement("button", {
-                    className: activeSection === 'menu' ? 'active' : '',
-                    onClick: () => setActiveSection(activeSection === 'menu' ? 'home' : 'menu')
-                }, "Our Menu"),
-                React.createElement("button", {
-                    className: activeSection === 'about' ? 'active' : '',
-                    onClick: () => setActiveSection(activeSection === 'about' ? 'home' : 'about')
-                }, "About"),
-                React.createElement("button", {
-                    className: activeSection === 'hours' ? 'active' : '',
-                    onClick: () => setActiveSection(activeSection === 'hours' ? 'home' : 'hours')
-                }, "Hours & Location")
+            React.createElement("div", { className: "header-content" },
+                React.createElement("div", { className: "button-container" },
+                    React.createElement("button", {
+                        className: activeSection === 'menu' ? 'active' : '',
+                        onClick: () => setActiveSection(activeSection === 'menu' ? 'home' : 'menu')
+                    }, "Our Menu"),
+                    React.createElement("button", {
+                        className: activeSection === 'about' ? 'active' : '',
+                        onClick: () => setActiveSection(activeSection === 'about' ? 'home' : 'about')
+                    }, "About"),
+                    React.createElement("button", {
+                        className: activeSection === 'hours' ? 'active' : '',
+                        onClick: () => setActiveSection(activeSection === 'hours' ? 'home' : 'hours')
+                    }, "Hours & Location")
+                ),
+                React.createElement("div", { className: "cart-icon", onClick: () => setActiveSection('cart') },
+                    React.createElement("span", { className: "cart-emoji" }, "🛒"),
+                    cart.length > 0 && React.createElement("span", { className: "cart-count" }, cart.length)
+                )
             )
         ),
         React.createElement("main", null,
@@ -154,7 +221,7 @@ function App() {
                             "data-food": "hotdog",
                             onClick: () => handleFoodClick('hotdog')
                         }),
-                        selectedFood === 'hotdog' && React.createElement("div", { className: "food-selected" }, "🌭 Selected!")
+                        animatingItem === 'hotdog' && React.createElement("div", { className: "food-selected" }, "🌭 Added!")
                     ),
                     React.createElement("div", { className: "image-wrapper" },
                         React.createElement("img", {
@@ -163,7 +230,7 @@ function App() {
                             "data-food": "sandwich",
                             onClick: () => handleFoodClick('sandwich')
                         }),
-                        selectedFood === 'sandwich' && React.createElement("div", { className: "food-selected" }, "🥪 Selected!")
+                        animatingItem === 'sandwich' && React.createElement("div", { className: "food-selected" }, "🥪 Added!")
                     ),
                     React.createElement("div", { className: "image-wrapper" },
                         React.createElement("img", {
@@ -172,13 +239,32 @@ function App() {
                             "data-food": "hamburger",
                             onClick: () => handleFoodClick('hamburger')
                         }),
-                        selectedFood === 'hamburger' && React.createElement("div", { className: "food-selected" }, "🍔 Selected!")
+                        animatingItem === 'hamburger' && React.createElement("div", { className: "food-selected" }, "🍔 Added!")
                     )
                 )
             ),
             activeSection === 'menu' && renderMenu(),
             activeSection === 'about' && renderAbout(),
-            activeSection === 'hours' && renderHoursLocation()
+            activeSection === 'hours' && renderHoursLocation(),
+            activeSection === 'cart' && React.createElement("div", { className: "cart-section" },
+                React.createElement("h2", null, "Your Order"),
+                cart.length === 0 ? React.createElement("p", null, "Your cart is empty. Add some delicious food!") :
+                React.createElement(React.Fragment, null,
+                    React.createElement("div", { className: "cart-items" },
+                        cart.map((item, index) => React.createElement("div", { key: index, className: "cart-item" },
+                            React.createElement("img", { src: item.image, alt: item.name }),
+                            React.createElement("div", { className: "cart-item-details" },
+                                React.createElement("h3", null, item.name),
+                                React.createElement("p", null, item.price)
+                            )
+                        ))
+                    ),
+                    React.createElement("div", { className: "cart-total" },
+                        React.createElement("h3", null, `Total: $${cart.reduce((sum, item) => sum + parseFloat(item.price.slice(1)), 0).toFixed(2)}`),
+                        React.createElement("button", { className: "checkout-btn", onClick: placeOrder }, "🍽️ Place Order")
+                    )
+                )
+            )
         ),
         React.createElement("footer", null,
             React.createElement("p", null,
