@@ -1,4 +1,3 @@
-import React from "react"
 import stockData from "./data/stockData"
 import Stock from "./components/Stock"
 

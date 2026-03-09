@@ -1,4 +1,3 @@
-import React from "react"
 import emailList from "./data/emailList"
 import TopText from "./components/TopText"
 

@@ -1,4 +1,3 @@
-import React from "react"
 import {nanoid} from "nanoid"
 import festivalData from "./data/festivalData"
 import BuyTickets from "./components/BuyTickets"

@@ -1,4 +1,3 @@
-import React from "react"
 import sonnetsData from "./data/sonnetsData"
 import Header from "./components/Header"
 import { nanoid } from "nanoid"

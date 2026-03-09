@@ -1,4 +1,3 @@
-import React from "react"
 import { nanoid } from "nanoid"
 import blankConfig from "./data/blankConfig"
 import Clock from "./components/Clock"

@@ -1,4 +1,3 @@
-import React from "react"
 import Header from "./components/Header"
 import ActivityCard from "./components/ActivityCard"
 import placeHolderData from "./data/placeHolderData.js"

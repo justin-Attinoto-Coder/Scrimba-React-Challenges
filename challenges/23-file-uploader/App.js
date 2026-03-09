@@ -1,4 +1,3 @@
-import React from "react"
 import TopText from "./components/TopText"
 
 export default function App() {

@@ -1,4 +1,3 @@
-import React from "react"
 import { nanoid } from "nanoid"
 import Header from "./components/Header"
 import Article from "./components/Article"

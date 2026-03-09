@@ -1,4 +1,3 @@
-import React from "react"
 import Thermometer from "./components/Thermometer"
 import Header from "./components/Header"
 

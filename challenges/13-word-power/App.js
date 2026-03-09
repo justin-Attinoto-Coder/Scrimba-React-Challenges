@@ -1,4 +1,3 @@
-import React from "react"
 import wordsDataOne from "./data/wordsDataOne"
 import wordsDataTwo from "./data/wordsDataTwo"
 import Header from "./components/Header"

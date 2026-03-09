@@ -1,4 +1,3 @@
-import React from "react"
 import ResultsModal from "./components/ResultsModal"
 import EmojiLists from "./components/EmojiLists"
 import emojis from "./data/emojis"

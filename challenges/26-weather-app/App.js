@@ -1,4 +1,3 @@
-import React from "react"
 import weatherData from "./weatherData"
 import Weather from "./Weather"
 

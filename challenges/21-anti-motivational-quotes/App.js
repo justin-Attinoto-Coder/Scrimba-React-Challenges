@@ -1,4 +1,3 @@
-import React from "react"
 import showState from "./utilities/showState"
 import NextQuoteButton from "./components/NextQuoteButton"
 import imageData from "./data/imageData"

@@ -1,4 +1,3 @@
-import React from "react"
 import Enemy from "./components/Enemy"
 import Button from "./components/Button"
 import runGame from "./utilities/runGame"

@@ -1,4 +1,3 @@
-import React from "react"
 import Header from "./components/Header"
 import FrontMessage from "./components/FrontMessage"
 import InnerMessage from "./components/InnerMessage"
