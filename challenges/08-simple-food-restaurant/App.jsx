@@ -1,3 +1,5 @@
+import React from 'react'
+
 function App() {
     const [activeSection, setActiveSection] = React.useState('home')
     const [selectedFood, setSelectedFood] = React.useState(null)

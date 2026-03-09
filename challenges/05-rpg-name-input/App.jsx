@@ -1,3 +1,4 @@
+import React from 'react'
 import TopSection from "./components/TopSection.js"
 import BottomSection from "./components/BottomSection.js"
 
@@ -36,5 +37,3 @@ function App() {
 }
 
 export default App
-
-ReactDOM.createRoot(document.getElementById('root')).render(React.createElement(App))

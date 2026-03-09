@@ -1,3 +1,4 @@
+import React from 'react'
 import Buttons from "./components/Buttons.js"
 import Display from "./components/Display.js"
 import calculateResult from "./utilities/calculateResult"
@@ -284,5 +285,3 @@ function App() {
 }
 
 export default App
-
-ReactDOM.createRoot(document.getElementById('root')).render(React.createElement(App))

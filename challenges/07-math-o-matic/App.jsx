@@ -1,3 +1,4 @@
+import React from 'react'
 import CheckAnswerButton from "./components/CheckAnswerButton.js"
 import GetNewProblemButton from "./components/GetNewProblemButton.js"
 import StartButton from "./components/StartButton.js"
@@ -225,5 +226,3 @@ function App() {
 }
 
 export default App
-
-ReactDOM.createRoot(document.getElementById('root')).render(React.createElement(App))
