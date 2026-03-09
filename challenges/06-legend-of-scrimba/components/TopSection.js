@@ -9,7 +9,7 @@ function TopSection({submitted}) {
         React.createElement("div", { className: "image-container" },
             React.createElement("img", {
                 className: !submitted || classCondition ? null : "fade-out-and-in",
-                src: !submitted || classCondition ? "./images/character1.png" : "./images/character2.png"
+                src: !submitted || classCondition ? "challenges/06-legend-of-scrimba/images/character1.png" : "challenges/06-legend-of-scrimba/images/character2.png"
             })
         )
     )

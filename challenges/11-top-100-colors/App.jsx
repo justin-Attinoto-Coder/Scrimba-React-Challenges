@@ -31,21 +31,21 @@ export default function App() {
 			</div>
 		)
 	}
-	
+
 	const colors = colorData.map((color, index)=>{
 		return (
-			<ColorCard 
+			<ColorCard
 				key={nanoid()}
 				color={color}
 				number={index + 1}
 			/>
 		)
 	})
-	
+
 	return (
 		<div className="wrapper">
-			<Header /> 
-			{colors}			
+			<Header />
+			{colors}
 		</div>
 	)
 }
